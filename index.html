@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee House</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="./img/Contact/coffee-logo.png" alt="Coffee Logo">
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="./img/Contact/search.png" width="20" height="20" alt="Search Icon" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer" onclick="location.href='admin.php';" style="cursor: pointer;">Admin</span>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">ICED LATTE</h3>
+            <h3 class="menuItem">MATCHA LATTE</h3>
+            <h3 class="menuItem">AMERICANO</h3>
+            <h3 class="menuItem">STRAWBERRY MATCHA</h3>
+            <h3 class="menuItem">AFFOGATO</h3>
+            <h3 class="menuItem">ROSE LATTE</h3>
+        </div>
+    </nav>
+
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="./coffee/Iced Latte.jpg" alt="Iced Latte" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">ICED LATTE<br>BREWED<br>FRESH</h1>
+                <h2 class="sliderPrice">RM15</h2>
+                <a href="#product"><button class="buyButton">BUY NOW!</button></a>
+            </div>
+            <div class="sliderItem">
+                <img src="./coffee/Matcha Latte.jpg" alt="Matcha Latte" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">MATCHA LATTE<br>EARTHY<br>GOODNESS</h1>
+                <h2 class="sliderPrice">RM15</h2>
+                <a href="#product"><button class="buyButton">BUY NOW!</button></a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/Product/americano.png" alt="Americano" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AMERICANO<br>STRONG<br>& SMOOTH</h1>
+                <h2 class="sliderPrice">RM12</h2>
+                <a href="#product"><button class="buyButton">BUY NOW!</button></a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/Product/strawberry-matcha.png" alt="Strawberry Matcha" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">STRAWBERRY MATCHA<br>FRUITY<br>BLEND</h1>
+                <h2 class="sliderPrice">RM16</h2>
+                <a href="#product"><button class="buyButton">BUY NOW!</button></a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/Product/affogato.png" alt="Affogato" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AFFOGATO<br>COFFEE & ICE CREAM</h1>
+                <h2 class="sliderPrice">RM17</h2>
+                <a href="#product"><button class="buyButton">BUY NOW!</button></a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/Product/rose-latte.png" alt="Rose Latte" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">ROSE LATTE<br>FLORAL<br>FLAVOUR</h1>
+                <h2 class="sliderPrice">RM15</h2>
+                <a href="#product"><button class="buyButton">BUY NOW!</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <img src="./img/Icon/shipping.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Nationwide delivery on all orders.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/Icon/return.png" alt="">
+            <span class="featureTitle">14 DAYS RETURN</span>
+            <span class="featureDesc">Easy return and quick refund within 14 days.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/Icon/gift.png" alt="">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Give the gift of coffee to your loved ones.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/Icon/contact.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Reach out via email or WhatsApp.</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img src="./img/Product/iced-latte.png" alt="Iced Latte" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">ICED LATTE</h1>
+            <h2 class="productPrice">RM15</h2>
+            <p class="productDesc">Let the chill of an iced latte cool your thoughts and bring you back to yourself.</p>
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+            <div class="sizes">
+                <div class="size">LARGE</div>
+                <div class="size">NORMAL</div>
+                <div class="size">SMALL</div>
+            </div>
+            <button class="productButton">BUY NOW!</button>
+        </div>
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <form action="data.php" method="POST">
+                <label>Name and Surname</label>
+                <input type="text" name="name" placeholder="John Doe" class="payInput"><br>
+                <label>Phone Number</label>
+                <input type="text" name="phone" placeholder="+6012 345 6781" class="payInput" maxlength="13"><br>
+                <label>Address</label>
+                <input type="text" name="address" placeholder="Elton St 21 22-145" class="payInput"><br>
+                <h1 class="payTitle">Card Information</h1>
+                <div class="cardIcons">
+                    <img src="./img/Contact/visa.png" width="40" alt="" class="cardIcon">
+                    <img src="./img/Contact/master.png" alt="" width="40" class="cardIcon">
+                </div>
+                <input type="text" name="card_number" class="payInput" placeholder="Card Number" maxlength="16">
+                <div class="cardInfo">
+                    <input type="text" name="expiry_month" placeholder="mm" class="payInput sm" maxlength="2">
+                    <input type="text" name="expiry_year" placeholder="yyyy" class="payInput sm" maxlength="4">
+                    <input type="text" name="cvv" placeholder="cvv" class="payInput sm">
+                </div>
+                <button type="submit" class="payButton">Checkout!</button>
+                <span class="close">X</span>
+            </form>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Brew Your Mood!</h1>
+            <img src="./img/Gallery/coffee1.jpg" alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="./img/Gallery/coffee2.jpg" alt="" class="galleryImg">
+            <h1 class="galleryTitle">Freshly Brewed Happiness</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Savor the Aroma</h1>
+            <img src="./img/Gallery/coffee3.jpg" alt="" class="galleryImg">
+        </div>
+    </div>
+
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="./img/Gallery/coffee4.jpg" alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">COFFEE FOR ALL SEASONS</h3>
+            <h1 class="nsTitle">New Arrivals</h1>
+            <h1 class="nsTitle">Fresh Blends</h1>
+            <a href="#nav"><button class="nsButton">CHOOSE YOUR COFFEE</button></a>
+        </div>
+        <div class="nsItem">
+            <img src="./img/Gallery/coffee5.jpg" alt="" class="nsImg">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Our Story</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Franchise</li>
+                    <li class="fListItem">Locations</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Help</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Privacy</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Menu</h1>
+                <ul class="fList">
+                    <li class="fListItem">Iced Latte</li>
+                    <li class="fListItem">Matcha Latte</li>
+                    <li class="fListItem">Americano</li>
+                    <li class="fListItem">Strawberry Matcha</li>
+                    <li class="fListItem">Affogato</li>
+                    <li class="fListItem">Rose Latte</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe for Coffee Deals</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="./img/Contact/facebook.png" alt="" class="fIcon">
+                    <img src="./img/Contact/twitter.png" alt="" class="fIcon">
+                    <img src="./img/Contact/instagram.png" alt="" class="fIcon">
+                    <img src="./img/Contact/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">© Coffee House. All rights reserved. 2025.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
